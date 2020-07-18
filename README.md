@@ -50,3 +50,5 @@ The test image outputs are also in "test_images_output" Folder.
 (2) get rid of outlier of line segements.
 
 (3) apply more efficient lanes separation methods.
+
+(4) inability to capture curves on the road
