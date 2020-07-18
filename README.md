@@ -12,15 +12,19 @@ In this project you will detect lane lines in images using Python and OpenCV.  O
 The pipeline is given as follow:
 
 (1) transform the RGB image into gray image
+
 <img src="test_images_output/original.png" width="480" alt="original" />
+
 <img src="test_images_output/gray.png" width="480" alt="gray" />
 
 (2) include Gaussian smoothing with gaussian_blur function for suppressing noise and spurious gradients by averaging
 
 (3) detect edges with canny function
+
 <img src="test_images_output/edges.png" width="480" alt="edges" />
 
 (4) get the region of interest (ROI) of edges with a quadrilateral region mask
+
 <img src="test_images_output/edges_in_ROI.png" width="480" alt="edges_in_ROI" />
 
 (5) use Hough transform to find lane lines in the ROI area
@@ -30,10 +34,13 @@ The pipeline is given as follow:
 (7) reduce noise by get rid of horizental lines, which abs(slope) is < 0.4)
 
 (8) fit the left lane and the right lane use np.polyfit(y,x,1) function to extrapolate to the top and bottom of the lane
+
 <img src="test_images_output/fitting_lanes.png" width="480" alt="fitting_lanes" />
 
 (9) draw the lanes in region of interest and combine the found lanes with oringal image
+
 <img src="test_images_output/lanes_in_ROI.png" width="480" alt="lanes_in_ROI" />
+
 <img src="test_images_output/final.png" width="480" alt="final" />
 
 The test image outputs are also in "test_images_output" Folder.
