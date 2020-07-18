@@ -37,9 +37,9 @@ The pipeline is given as follow:
 
 <img src="test_images_output/fitting_lanes.png" width="480" alt="fitting_lanes" />
 
-(9) draw the lanes in region of interest and combine the found lanes with oringal image
-
 <img src="test_images_output/lanes_in_ROI.png" width="480" alt="lanes_in_ROI" />
+
+(9) draw the lanes in region of interest and combine the found lanes with oringal image
 
 <img src="test_images_output/final.png" width="480" alt="final" />
 
